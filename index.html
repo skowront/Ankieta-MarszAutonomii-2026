@@ -4,17 +4,22 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
 
-    <meta http-equiv="refresh" content="0; url=https://autonomia.pl">
+    <!-- Cache-prevention hints for browsers -->
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
 
     <script>
-      window.location.replace("https://autonomia.pl");
+      const REDIRECT_URL = "https://autonomia.pl";
+
+      window.location.replace(REDIRECT_URL);
     </script>
   </head>
   <body>
     <p>
       Redirecting to
       <a href="https://autonomia.pl">https://autonomia.pl</a>
-
+      
     </p>
   </body>
 </html>
